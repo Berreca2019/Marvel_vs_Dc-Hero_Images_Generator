@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>Marvel/DC</title>
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body class="body">
+
+        <div class="popupContainer">
+            <div class="popup">
+
+                <h1>Olá, geek! &#128571;</h1>
+                <p>Esse é um projeto totalmente experimental. Nele você pode escolher entre os universos DC e Marvel, um herói dos respectivos e quantas vezes quer que a imagem dele apareça. Bom proveito!</p>
+
+                <button class="btnBeleza">Beleza!</button>
+
+            </div>
+        </div>
+
+        <!--cria div do formulário-->
+
+        <div class="container"> 
+                <div class="formBgContainer">
+
+
+                    <h1> DC vs Marvel</h1>
+                    
+                    <div class="row">
+                        <!--div que guarda o icon de "rosto"-->
+                        <div class="switchContainer">
+
+                            <input type="checkbox" class="switchBtn">
+                            <div class="mouth">
+
+                                <div class="tongue"></div>
+                            </div>
+
+                            <div class="eye1"></div>
+                            <div class="eye2"></div>
+
+                        </div>
+
+                        <!--menu de seleção de heróis-->
+                        <div class="selectHeroes" id="selectDc">
+                            <select  id="dcSelect" class="seletor dcHeroes">
+                                <option id= "batman" value="batman"> Batman </option>
+                                <option value="ww"> Wonder Woman</option>
+                                <option value="superman"> Superman</option>
+                                <option value="flash"> The Flash</option>
+                                <option value="arqueiro"> Arqueiro Verde</option>
+                                <option value="robin"> Robin</option>
+                                <option value="canario"> Canário Negro</option>
+                                <option value="lanterna"> Lanterna Verde</option>
+                                <option value="marte"> Caçador de Marte</option>
+                                <option value="batgirl"> Batgirl</option>
+                            </select>
+
+                            <select class="seletor marvelHeroes" id="selectMarvel">
+                                <option value="miranha">Homem Aranha</option>
+                                <option value="ferro"> Homem de Ferro</option>
+                                <option value="capitao"> Capitão América</option>
+                                <option value="thor"> Thor</option>
+                                <option value="strange"> Dr. Estranho</option>
+                                <option value="pantera"> Pantera Negra</option>
+                                <option value="viuva"> Viúva Negra</option>
+                                <option value="hulk"> Hulk</option>
+                                <option value="feiticeira"> Feiticeira Escarlate</option>
+                                <option value="visao"> Visão</option>
+
+                            </select>
+                        </div>
+                    </div>
+
+                        <div class="contador">
+
+                            <div class="remove"> - </div>
+                            <div class="result"> 0 </div>
+                            <div class="add"> + </div>
+                        </div>
+
+                        <a href="#smooth">
+                            <button class="btn" id="btnMostrar">Mostrar</button>
+                        </a>
+                </div>
+            
+                <div class="btnContainer">
+                    <button class="refreshBtn" onclick="window.location.reload();">    
+                        <img src="img/refresh_b.png" width="30px">
+                    </button>
+                    
+                    <div class="catContainer">
+                        <div class="topBox">
+                            <div class="cat">&#128571;</div>
+                            <div class="tampa"></div>
+                        </div>  
+                        <div class="underBox"></div>
+                    </div>
+                </div> 
+        </div>
+        
+
+        <!-- div que recebe as imagens -->
+        <div id="image"></div>   
+
+        <div class="foot" id="smooth"></div>
+
+        <script src="index.js"></script>
+    </body>
+</html>
