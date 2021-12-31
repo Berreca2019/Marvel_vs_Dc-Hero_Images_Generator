@@ -11,3 +11,11 @@ A página também conta com um botão de refresh e um popUp que explica ao visit
 
 
 Manipulação de DOM e arquivos src de jpg e png.
+
+<h2> Linguagens utilizadas </h2>
+
+<ul>
+ <li> HTML </li>
+ <li> JavaScipt </li>
+ <li> CSS </li>
+</ul>
